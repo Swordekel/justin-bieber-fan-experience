@@ -46,5 +46,6 @@ desktop.ini
 
 # Tooling / scaffold artifacts (not needed in the repo)
 .claude/
+.vercel/
 guidelines/
 src/app/components/figma/
