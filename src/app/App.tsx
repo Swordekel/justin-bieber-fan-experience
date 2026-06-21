@@ -3,7 +3,6 @@ import { AnimatePresence, motion, useScroll, useSpring } from "motion/react";
 
 import { useSmoothScroll } from "./hooks/useSmoothScroll";
 import { Preloader } from "./components/Preloader";
-import { CustomCursor } from "./components/CustomCursor";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -43,8 +42,6 @@ export default function App() {
 
   return (
     <>
-      <CustomCursor />
-
       <AnimatePresence mode="wait">
         {loading && <Preloader key="preloader" onComplete={() => setLoading(false)} />}
       </AnimatePresence>
